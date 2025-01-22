@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/icon/Favicon(2).png" type="image/x-icon">
+    <!-- framework -->
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Include Font Awesome CSS --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- Title -->
+    <title>CarspotX</title>
+</head>
+<body style="background-color: #fffee8;" >
+
+
+  <section id="Home" >
+    <nav class="navbar navbar-expand-lg  p-1 mb-5 bg-white rounded" style="position: absolute; background-color: transparent !important; left: 0%; right: 0; top: 0; z-index: 999; margin-top: 20px;" id="navbar" data-aos="fade-down" data-aos-duration="800">
+      <div class="container  ">
+        <a class="navbar-brand " href="#">
+          <img src="image/icon/LAstIcon.png" alt="CodeVerse Logo" style="height: 60px;">
+        </a>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-3 text-light">
+            <li class="nav-item">
+              <a class="nav-link text-light " aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#Traditional">About Us</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#Blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#contact-section">Contact Us</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container inside">
+
+      <div class="row d-flex">
+      <div class="col" data-aos="fade-right" data-aos-duration="700" style="position: sticky; top: 0; height: 350px;">
+        <h1 class="title text-hero" style="text-shadow: 0px 4px 2px #0909096a; ">Innovating <br> <span style=" font-size: 3em !important;">Nusantara</span></h1>
+        <p class="fs-3 text-hero" style="text-shadow: 0px 4px 2px #0909096a;">Connecting Tradition and Technology</p>
+        <a href="#Traditional"><button class="btn  btn-home fs-4 w-100" style="color: #F7F7F7; background-color: #9e8c00; border: #9e8c00 1px solid;">Learn More</button></a>
+      </div>
+
+      <div class="col car-place d-flex justify-content-center flex-column">
+        <img src="image/Wayang/kriss.png" alt="2017" id="Car-home" data-aos="zoom-in-up" data-aos-duration="500">
+        <div class="square"></div>
+
+        <div class="car-btn d-flex justify-content-center">
+        <img src="image/backgroundhero/image (6).png" alt="bmw" id="bmw-btn" onclick="bmwbtn()" data-aos="fade-up" data-aos-duration="700">
+        <img src="image/backgroundhero/Wayang.png" alt="GTR" id="gtr-btn" onclick="gtrbtn()" data-aos="fade-up" data-aos-duration="700">
+        <img src="image/backgroundhero/Delman.png" alt="freari" id="frerari-btn" onclick="freraribtn()" data-aos="fade-up" data-aos-duration="700">
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="navbar navbar-expand-lg shadow p-3 mb-5 bg-white rounded main-navbar " style="background-color: rgba(160, 155, 0, 0.719) !important; margin-bottom: 0 !important; position: sticky;" id="navbar"  data-aos="fade-down" data-aos-duration="800">
+    <div class="container ">
+      <a class="navbar-brand " href="#">
+        <img src="image/icon/LAstIcon.png" alt="CodeVerse Logo" style="height: 60px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fs-3">
+          <li class="nav-item">
+            <a class="nav-link text-light" aria-current="page" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#Traditional">About Us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#Blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#contact-section">Contact Us</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="About" style="background-color: #F7F7F7; padding-bottom: 3rem; position: relative; ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 About-col" data-aos="zoom-in">
+          <h4 class="fs-2 titles">Tradition on <br><span class="span " style="font-size: 5rem;">Nusantara</span></h4>
+          <p class="fs-4">
+            Indonesia has a variety of traditions that reflect the cultural and spiritual richness of its people. These traditions involve various aspects of life, from religious ceremonies, harvest celebrations, to funeral rituals. Each region in Indonesia has a unique way to celebrate and honor ancestors and the surrounding nature.
+            <br><br>
+The diversity of these traditions shows how deep the relationship between Indonesian people and their land and ancestors is. These traditions are not only part of cultural identity, but also a way to maintain harmony and balance in daily life. By preserving these traditions, Indonesian people continue to celebrate their rich cultural heritage and strengthen the social bonds between them.
+          </p>
+        </div>
+        <div class="col-md-6 About-col align-items-center justify-content-center">
+          <div class="swiper-About">
+            <div class="swiper-About-wrap">
+              <div class="swiper-slides"><img src="image/About-image/image-1.png" alt="Image 1"></div>
+              <div class="swiper-slides"><img src="image/About-image/image-2.png" alt="Image 2"></div>
+              <div class="swiper-slides"><img src="image/About-image/image-3.png" alt="Image 3"></div>
+              <div class="swiper-slides"><img src="image/About-image/image-4.png" alt="Image 4"></div>
+              <div class="swiper-slides"><img src="image/About-image/image-5.png" alt="Image 5"></div>
+              <div class="swiper-slides"><img src="image/About-image/image.png" alt="Image 5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- status section -->
+ <section id="status" style="background-image: url(image/backgroundhero/Sepertiga.png); background-size: 100%; background-position-x: center; background-repeat: no-repeat;">
+ 
+    <div class="container" data-aos="fade-up">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col d-flex justify-content-center ">
+            <div class="card m-2 "  >
+              <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjshttps://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
+
+              <dotlottie-wc src="https://lottie.host/814097c2-dafa-47ea-8300-2c6174be5197/QFsCfZA9EG.lottie" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></dotlottie-wc>
+              <div class="card-body">
+                <h5 class="card-title h1 text-center" >17.000+</h5>
+                <p class="card-text text-center h5">Island's</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center ">
+            <div class="card m-2 "  >
+              <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjshttps://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
+
+              <dotlottie-wc src="https://lottie.host/66bf6180-e45b-46a6-9ecb-e0e15a5e9bb5/tzDU9ToZfW.lottie" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></dotlottie-wc>
+              <div class="card-body">
+                <h5 class="card-title h1 text-center" >1500+</h5>
+                <p class="card-text text-center h5">language's</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="card m-2 ">
+              <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.3.0/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/a4a41e39-2dfd-494e-8724-83b0adabf365/4gxPlVM0XS.lottie" autoplay loop style="height: 100%; width: 100%;"></dotlottie-wc>
+              <div class="card-body">
+                <h5 class="card-title h1 text-center" style="margin: 0; padding: 0;">2.000+
+                </h5>
+                <p class="card-text text-center h5">Temple</p>
+              </div>
+            </div>
+          </div>
+
+      
+
+          <div class="col d-flex justify-content-center">
+            <div class="card m-2" >
+              <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
+
+              <dotlottie-wc src="https://lottie.host/207fe254-a4ae-4dd2-80a7-06b181ca61e1/HclDcEzpmF.lottie"
+              background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></dotlottie-wc>
+              <div class="card-body">
+                <h5 class="card-title h1 text-center" style="margin: 0; padding: 0;" >275+</h5>
+                <p class="card-text text-center h5">Spices</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Traditional" style="margin-top: 7rem;">
+
+    <div class="container d-flex justify-content-center">
+      <div data-aos="fade-right" data-aos-duration="700"  class="text-center">
+        <div >
+          <h3 style="font-weight: bold; " class="fs-4 titles " >We Welcome You <br><span class="titles span" style="font-size: 5rem;">Tradition Of Nusantara</span> </h3>
+          
+        </div>
+        <p style="color: #505050; letter-spacing: 3.52px;" class="fs-2 text-center">Explore more about the tradition of indonesia with us</p>
+      </div>
+    </div>
+
+  
+
+  
+    <!-- traditional home slide -->
+    <div class="container Slider-card" style="padding-top: 8rem;">
+      <div class="d-flex justify-content-between align-items-center">
+        <div data-aos="fade-right" data-aos-duration="700">
+          <h3 style="font-weight: bold; color: #9e8c00; font-size: 2.5rem;" class=" " >Traditional houses in Nusantara</h3>
+          <p style="color: #505050;" class="fs-4">Explore more about traditional house in nusantara together</p>
+        </div>
+
+        
+      </div>
+    </div>
+
+    <div class="container container-slide" data-aos="fade-up" data-aos-duration="1000">
+      <div class="splide">
+        <div class="splide__list">
+
+          <div class="splide__slide">
+            <div class="card card-slide" style="background-image: url(image/Cards/Rumah\ Toraja.png);">
+              <img src="image/Cards/invisible.png" alt="Card Image" class="card-img-top" width="100%" height="300">
+              <div class="card-body" style="background-color: transparent;">
+                <h5 class="card-title">Toraja House</h5>
+                <p class="card-text">With supporting text below as a natural </p>
+                <a  class="btn btn-primary" id="Torajabtn">Show More</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="splide__slide">
+            <div class="card card-slide" style="background-image: url(image/Cards/Rumah\ gadang.png);">
+              <img src="image/Cards/invisible.png" alt="Card Image" class="card-img-top" width="100%" height="300">
+              <div class="card-body" style="background-color: transparent;">
+                <h5 class="card-title">Gadang House</h5>
+                <p class="card-text">With supporting text below as a natural </p>
+                <a  class="btn btn-primary" id="Gadangbtn">Show More</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="splide__slide">
+            <div class="card card-slide" style="background-image: url(image/Cards/Rumah\ Belah\ Bubung.png);">
+              <img src="image/Cards/invisible.png" alt="Card Image" class="card-img-top" width="100%" height="300">
+              <div class="card-body" style="background-color: transparent;">
+                <h5 class="card-title">Belah Bubung House</h5>
+                <p class="card-text">With supporting text below as a natural </p>
+                <a  class="btn btn-primary" id="Belahbtn">Show More</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="splide__slide">
+            <div class="card card-slide" style="background-image: url(image/Cards/Rumah\ Krong\ Bade.png);">
+              <img src="image/Cards/invisible.png" alt="Card Image" class="card-img-top" width="100%" height="300">
+              <div class="card-body" style="background-color: transparent;">
+                <h5 class="card-title">Krong Bade House</h5>
+                <p class="card-text">With supporting text below as a natural </p>
+                <a  class="btn btn-primary" id="Krongbtn">Show More</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="splide__slide">
+            <div class="card card-slide" style="background-image: url(image/Cards/Rumah\ Selaso\ Jatuh\ Kembar.png);">
+              <img src="image/Cards/invisible.png" alt="Card Image" class="card-img-top" width="100%" height="300">
+              <div class="card-body" style="background-color: transparent;">
+                <h5 class="card-title">Selaso Jatuh Kembar</h5>
+                <p class="card-text">With supporting text below as a natural </p>
+                <a  class="btn btn-primary" id="Selasobtn">Show More</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="splide__slide">
+            <div class="card card-slide" style="background-image: url(image/Cards/Rumah\ Tongkonan.png);">
+              <img src="image/Cards/invisible.png" alt="Card Image" class="card-img-top" width="100%" height="300">
+              <div class="card-body" style="background-color: transparent;">
+                <h5 class="card-title">Tongkonan House</h5>
+                <p class="card-text">With supporting text below as a natural </p>
+                <a  class="btn btn-primary" id="Tongkonanbtn">Show More</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="splide__slide">
+            <div class="card card-slide" style="background-image: url(image/Cards/Rumah\ Bolon.png);">
+              <img src="image/Cards/invisible.png" alt="Card Image" class="card-img-top" width="100%" height="300">
+              <div class="card-body" style="background-color: transparent;">
+                <h5 class="card-title">Bolon House</h5>
+                <p class="card-text">With supporting text below as a natural </p>
+                <a  class="btn btn-primary" id="Bolonbtn">Show More</a>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+        <div class="splide__pagination"></div>
+      </div>
+    </div>
+
+    <!-- Libary -->
+    <div class="container Slider-card" style="padding-top: 8rem;">
+      <div class="d-flex justify-content-between align-items-center row">
+        <div data-aos="fade-right" data-aos-duration="700">
+          <h3 style="font-weight: bold; color: #9e8c00; font-size: 2.5rem;" class=" " >Documentation of traditions <br>in Nusantara</h3>
+          <p style="color: #505050;" class="fs-4">Enjoy the vibes and culture with an image</p>
+        </div>
+      </div>
+
+      <div class="row" id="libery-con" >
+        <div class="col-2 imgs" >
+          <img src="image/Libery/Food.png" alt="" >
+        </div>
+        <div class="col-4 imgs">
+          <img src="image/Libery/bali.png" alt="" >
+        </div>
+        <div class="col-5 imgs">
+          <img src="image/Libery/Reok.png" alt=""  >
+        </div><br>
+        <div class="row d-flex justify-content-center" style="margin: 5px;">
+          <div class="col-6 imgs">
+            <img src="image/Libery/Rumah.png" alt=""  >
+          </div>
+          <div class="col-5 imgs" >
+            <img src="image/Libery/Siluet.png" alt=""  >
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+
+  </section>
+
+  <div class="container-fluid">
+    <img src="image/backgroundhero/Vector.png" alt="" srcset="" width="100%" style="background-color: white; "> 
+  </div>
+
+  <section class="coment-section" id="Blog" style=" background-color: white; padding: 2rem;">
+    <div class="container text-center">
+      <div class="d-flex justify-content-between align-items-center row">
+        <div data-aos="fade-right" data-aos-duration="700">
+          <h3 style="font-weight: bold; color: #9e8c00; font-size: 3rem;"  >Enjoy the view of <span>Nusantara</span></h3>
+          <p style="color: #505050;" class="fs-4">See more the view of Nusantara here</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="height: 550px;">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qtdwTcloC4w?si=ZXeCLaZqZfk-Gf5-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid" >
+    <img src="image/backgroundhero/Gelombang bawah.svg" alt="" srcset="" width="100%" style="background-color: white;"> 
+  </div>
+
+  <section class="contact-section" id="contact-section" >
+    <div class="container text-center">
+      <div class="d-flex justify-content-between align-items-center row">
+        <div data-aos="fade-right" data-aos-duration="700">
+          <h3 style="font-weight: bold; color: #9e8c00; font-size: 4rem;" class=" title" >Contact US</h3>
+          <p style="color: #505050;" class="fs-4">Contact us anytime for more information </p>
+        </div>
+      </div>
+
+      
+  
+      <div class="row shadow p-3 mb-5 bg-white rounded" style="border: 1px solid rgba(0,0,0,.125); border-radius: 1.5rem; padding: 1rem; margin: 0.5rem !important;" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-lg-6  col-sm-12 ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.8436872745965!2d106.64832177512181!3d-6.6662842933286965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d11270ea83ed%3A0xa457fae935fcf6c9!2sIDN%20Boarding%20School%20Pamijahan%20Bogor!5e0!3m2!1sid!2sid!4v1714795591675!5m2!1sid!2sid" width="100%" height="100%" style="border:0; border-radius: 1.3rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="col-lg-6  col-sm-12">
+          <form  method="POST" class="contact-box" style="margin-top: 1rem;">
+            <input type="text" placeholder="Your Name" style="width: 100%;" name="Your Name:"><br>
+            <input type="email" style="width: 100%;" placeholder="Your Gmail" name="Your Gmail:">
+            <textarea class="form-control"  rows="6rem" placeholder="Enter your message here"></textarea>
+            <input type="submit" class="submit-btn text-light btn-primary" style="width: 100%; ">
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!-- Footer -->
+  <section class="footer" id="footer" style="background-color: #1D2124; margin-top: 6rem;">
+    <footer>
+      <div class="container" >
+        <div class="row" style="padding: 2rem;" >
+          <div class="col" data-aos="zoom-in" data-aos-duration="700">
+            <a class="logo-footer fs-4 text-align text-light" href="#">CodeVerse</a>
+            <p class="text-light fs-5">A fun website that you can learn about nusantara with 2 methods wichs auditoring and visual.</p>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="d-flex footer-nav" style="flex-direction: column;" data-aos="zoom-in" data-aos-duration="700">
+              <h5 class="text-light" style="font-weight: bold;">Our-Link</h5>
+              <a href="#Home" class="text-light fs-5" style="text-decoration: none;">Home</a>
+              
+              <a href="#Traditional" class="text-light fs-5" style="text-decoration: none;">About US</a>
+   
+  
+              <a href="#Blog" class="text-light fs-5" style="text-decoration: none;">Blog</a>
+  
+              <a href="#contact-section" class="text-light fs-5" style="text-decoration: none;">Contact</a>
+
+            </div>
+
+          </div>
+          
+          <div class="col d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="700">
+            <div class="d-flex footer-nav" style="flex-direction: column;">
+              <h5 class="text-light" style="font-weight: bold;">Social Media</h5>
+              <a href="#" class="text-light fs-5" style="text-decoration: none;">CodeVerseNT@gmail.com</a>
+              
+              <a href="#" class="text-light fs-5" style="text-decoration: none;">CodeVerse-NT-YT</a>
+   
+              <a href="#" class="text-light fs-5" style="text-decoration: none;">CodeVerseNT.git</a>
+  
+              <a href="#" class="text-light fs-5" style="text-decoration: none;">CodeVerse-NS-IG</a>
+
+            </div>
+
+          </div>
+          
+
+        </div>
+
+        <div class="row" style="padding-bottom: 1.5rem;" >
+          <div class="col text-center">
+            <h5 class="text-light">Created by CodeVerse NS | © 2024</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!-- Gadang -->
+  <div class="container" id="gadang" style="display: none; position: fixed; top: -100%;  transition: .4s; margin-top: 80px;  " >
+    <div class="row m-3" style="padding: 2rem; background-color: white; border-radius: 20px; box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);">
+      <div class="col-lg-6 col-sm-12 p-3"  >
+        <img src="image/Cards/Rumah gadang.png" alt="" srcset="" width="100%" style="border-radius: 20px;">
+        <div class="row mt-3">
+          <div class="col d-flex  align-items-center">
+            <audio controls style="width: 100%; height: 40px;" id="GadangSound">
+              <source src="image/Sound/Rumah gadang.mp3" type="" >
+            </audio>
+
+          </div>
+          <div class="col d-flex align-items-center">
+            <button class="btn btn-danger fs-4" style="border: 20px; width: 100%; height: 40px;" id="ExitGadang" >Exit</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-12 p-3" >
+        <div class="d-flex justify-content-between align-items-center row">
+          <div data-aos="fade-right" data-aos-duration="700">
+            <h3 style="font-weight: bold; color: #9e8c00; font-size: 3rem;" class=" titles" >Gadang House</h3>
+            <p style="color: #505050;" class="fs-4">Gadang House located in padang</p>
+          </div>
+        </div>
+
+        <div style="width: 100%; height: 300px; overflow-y: scroll;">
+          <p class="fs-4">Rumah Gadang is the name for the Minangkabau traditional house which is a traditional house and is often found in West Sumatra, Indonesia. This house is also called by another name by the local community as the Bagonjong House or some also call it the Baanjuang House.
+            Houses with this model are also often found in West Sumatra. However, not all areas in Minangkabau (darek) can build this traditional house, only in areas that already have nagari status can this Rumah Gadang be built. Likewise, in areas called rantau, these traditional houses were not previously built by Minangkabau migrants.</p>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Toraja-->
+  <div class="container" id="Toraja" style="display: none; position: fixed; top: -100%; left: 0; right: 0; bottom: 0; transition: .4s; margin-top: 80px; " >
+    <div class="row m-3" style="padding: 2rem; background-color: white; border-radius: 20px; box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);">
+      <div class="col-lg-6 col-sm-12 p-3"  >
+        <img src="image/Cards/Rumah Toraja.png" alt="" srcset="" width="100%" style="border-radius: 20px;">
+        <div class="row mt-3">
+          <div class="col d-flex  align-items-center">
+            <audio controls style="width: 100%; height: 40px;" id="TorajaSound">
+              <source src="image/Sound/Toraja.mp3" type="" >
+            </audio>
+
+          </div>
+          <div class="col d-flex align-items-center">
+            <button class="btn btn-danger fs-4" style="border: 20px; width: 100%; height: 40px;" id="ExitToraja" >Exit</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-12 p-3" >
+        <div class="d-flex justify-content-between align-items-center row">
+          <div data-aos="fade-right" data-aos-duration="700">
+            <h3 style="font-weight: bold; color: #9e8c00; font-size: 3rem;" class=" titles" >Toraja House</h3>
+            <p style="color: #505050;" class="fs-4">Toraja House located in South Sulawesi</p>
+          </div>
+        </div>
+
+        <div style="width: 100%; height: 300px; overflow-y: scroll;">
+          <p class="fs-4">Toraja people in South Sulawesi Province, Indonesia. Tongkonan architecture is known for its distinctive shape through the lower, middle and upper structures which have aesthetic beauty in structure and construction. Structural system mechanics form an architectural aesthetic system. Tongkonan is no longer used as a residence, but it no longer exists because each family that lives in Tongkonan generally has built their own residence. Tongkonan traditional houses are full of carvings containing meaning, namely symbolizing the social status of the Tongkonan owner filled with the upper layer.
+            Tongkonan in Toraja is defined as a place to sit (tongkon = sitting). Tongkonan is a traditional Torajan stilt house with a rectangular shape. It was built as a house on stilts, so that its inhabitants would not be easily disturbed by wild animals
+            </p>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- belah bubung -->
+  <div class="container" id="Belah" style="display: none; position: fixed; top: -100%; left: 0; right: 0; bottom: 0; transition: .4s; margin-top: 80px; " >
+    <div class="row m-3" style="padding: 2rem; background-color: white; border-radius: 20px; box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);">
+      <div class="col-lg-6 col-sm-12 p-3"  >
+        <img src="image/Cards/Rumah Belah Bubung.png" alt="" srcset="" width="100%" style="border-radius: 20px;">
+        <div class="row mt-3">
+          <div class="col d-flex  align-items-center">
+            <audio controls style="width: 100%; height: 40px;" id="BelahSound">
+              <source src="image/Sound/Belah.mp3" type="" >
+            </audio>
+
+          </div>
+          <div class="col d-flex align-items-center">
+            <button class="btn btn-danger fs-4" style="border: 20px; width: 100%; height: 40px;" id="ExitBelah" >Exit</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-12 p-3" >
+        <div class="d-flex justify-content-between align-items-center row">
+          <div data-aos="fade-right" data-aos-duration="700">
+            <h3 style="font-weight: bold; color: #9e8c00; font-size: 3rem;" class=" titles" >Belah Bubung House</h3>
+            <p style="color: #505050;" class="fs-4">Belah Bubung House located in Riau</p>
+          </div>
+        </div>
+
+        <div style="width: 100%; height: 300px; overflow-y: scroll;">
+          <p class="fs-4">Belah Bubung House is a traditional house from the Riau Islands in Indonesia. Rumah Belah Bubung is also known as Rumah Rabung or Rumah Bubung Malay. It is said that the name of this house was given by foreigners who came to Indonesia, such as China and the Netherlands. Belah Bubung House has the same house model as a house on stilts. This house is 2 meters high from the ground and is supported by several pillars. This house has a roof shaped like a horse saddle. The main house is divided into 4 parts, namely the hallway, main room, kitchen connecting room, and kitchen. The Belah Bubung house is made of wood, namely. The process of building a house is not haphazard because it has to go through several stages which are believed to prevent the home owner from bad luck. The size of this house also depends on the economic capabilities of the home owner. The larger the size of the house shows that the economic ability of the home owner is upper middle class, but the smaller the house shows that the economic ability of the home owner is lower middle class.
+
+            </p>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Korong Bade -->
+
+  <div class="container" id="Krong" style="display: none; position: fixed; top: -100%; left: 0; right: 0; bottom: 0; transition: .4s; margin-top: 80px; " >
+    <div class="row m-3" style="padding: 2rem; background-color: white; border-radius: 20px; box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);">
+      <div class="col-lg-6 col-sm-12 p-3"  >
+        <img src="image/Cards/Rumah Krong Bade.png" alt="" srcset="" width="100%" style="border-radius: 20px;">
+        <div class="row mt-3">
+          <div class="col d-flex  align-items-center">
+            <audio controls style="width: 100%; height: 40px;" id="KrongSound">
+              <source src="image/Sound/Krong.mp3" type="" >
+            </audio>
+
+          </div>
+          <div class="col d-flex align-items-center">
+            <button class="btn btn-danger fs-4" style="border: 20px; width: 100%; height: 40px;" id="ExitKrong" >Exit</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-12 p-3" >
+        <div class="d-flex justify-content-between align-items-center row">
+          <div data-aos="fade-right" data-aos-duration="700">
+            <h3 style="font-weight: bold; color: #9e8c00; font-size: 3rem;" class=" titles" >Krong Bade House</h3>
+            <p style="color: #505050;" class="fs-4">Krong Bade located in Nanggroe Aceh</p>
+          </div>
+        </div>
+
+        <div style="width: 100%; height: 300px; overflow-y: scroll;">
+          <p class="fs-4">Krong Bade House is a traditional house located in Nanggroe Aceh Darussalam. This house is often called rumoh Aceh. Like traditional houses in general, the Krong Bade House uses a lot of natural raw materials. Apart from being a place to live, the carvings inside the house are a marker of the owner's economic status. The Krong Bade House is a traditional house that is almost extinct because currently the people of Aceh prefer to live in modern houses. Because the costs of building and maintaining the Krong Bade House are quite large.
+            This house has stairs in front of the house which function to enter the house. The height of the stairs is around 2.5-3 meters from the ground. In general, the number of stairs in the Krong Bade House is odd, around 7 - 9 steps. The basic building materials for the Krong Bade House come from nature. In making houses, the people of Aceh do not use nails. Instead, they use ropes to tie and join one building material to another. The walls of traditional houses are made of palm wood which is decorated with paintings and the roof is made of palm grass leaves. The carvings in the Krong Bade House vary depending on the economic conditions of the owner. The more carvings on the walls of the house, the more prosperous the economic level.
+            
+            </p>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- selaso jatuh -->
+  <div class="container" id="Selaso" style="display: none; position: fixed; top: -100%; left: 0; right: 0; bottom: 0; transition: .4s; margin-top: 80px; " >
+    <div class="row m-3" style="padding: 2rem; background-color: white; border-radius: 20px; box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);">
+      <div class="col-lg-6 col-sm-12 p-3"  >
+        <img src="image/Cards/Rumah Selaso Jatuh Kembar.png" alt="" srcset="" width="100%" style="border-radius: 20px;">
+        <div class="row mt-3">
+          <div class="col d-flex  align-items-center">
+            <audio controls style="width: 100%; height: 40px;" id="SelasoSound">
+              <source src="image/Sound/Selaso.mp3" type="" >
+            </audio>
+
+          </div>
+          <div class="col d-flex align-items-center">
+            <button class="btn btn-danger fs-4" style="border: 20px; width: 100%; height: 40px;" id="ExitSelaso" >Exit</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-12 p-3" >
+        <div class="d-flex justify-content-between align-items-center row">
+          <div data-aos="fade-right" data-aos-duration="700">
+            <h3 style="font-weight: bold; color: #9e8c00; font-size: 3rem;" class=" titles" >Selaso jatuh kembar house</h3>
+            <p style="color: #505050;" class="fs-4">Selaso jatuh kembar located in Melayu Riau</p>
+          </div>
+        </div>
+
+        <div style="width: 100%; height: 300px; overflow-y: scroll;">
+          <p class="fs-4">Selaso Fall Kembar (Melayu Riau) is a typical Riau traditional house in the form of a balai Selaso Tumbang. This pavilion or traditional house functions as a place for joint activities, a meeting place, but is not used as a private residence. The Selaso Kembar Waterfall Traditional House is also known as the coronation hall, balirung sari, karapatan hall and so on. In the past, this building was very busy with visitors because it was often used by residents to carry out local traditional events such as deliberations, coronation of traditional heads, village meetings and even to carry out traditional ceremonies. However, now all of them have been replaced by mosques.
+            The Selaso Autumn Twin Traditional House has a special shape. This house building has a perimeter that is parallel between its supports and the ground floor. This traditional house is also decorated with various carvings of plants and animals.
+            
+            </p>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Tongkonan -->
+
+  <div class="container" id="Tongkonan" style="display: none; position: fixed; top: -100%; left: 0; right: 0; bottom: 0; transition: .4s; margin-top: 80px; " >
+    <div class="row m-3" style="padding: 2rem; background-color: white; border-radius: 20px; box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);">
+      <div class="col-lg-6 col-sm-12 p-3"  >
+        <img src="image/Cards/Rumah Tongkonan.png" alt="" srcset="" width="100%" style="border-radius: 20px;">
+        <div class="row mt-3">
+          <div class="col d-flex  align-items-center">
+            <audio controls style="width: 100%; height: 40px;" id="TongkonanSound">
+              <source src="image/Sound/Tongkonan.mp3" type="" >
+            </audio>
+
+          </div>
+          <div class="col d-flex align-items-center">
+            <button class="btn btn-danger fs-4" style="border: 20px; width: 100%; height: 40px;" id="ExitTongkonan" >Exit</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-12 p-3" >
+        <div class="d-flex justify-content-between align-items-center row">
+          <div data-aos="fade-right" data-aos-duration="700">
+            <h3 style="font-weight: bold; color: #9e8c00; font-size: 3rem;" class=" titles" >Tongkonan House</h3>
+            <p style="color: #505050;" class="fs-4">Tongkonan located in Sulawesi</p>
+          </div>
+        </div>
+
+        <div style="width: 100%; height: 300px; overflow-y: scroll;">
+          <p class="fs-4">Tongkonan Traditional House - The Tongkonan Traditional House has the shape of a rectangular house on stilts with a roof resembling a boat with a stern. However, by comparing the roof of this Toraja traditional house to buffalo horns.
+            The roof of the residence is also made from nipa leaves and coconut and can last up to 50 years if it is maintained properly.
+            
+            </p>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Bolon -->
+
+  <div class="container" id="Bolon" style="display: none; position: fixed; top: -100%; left: 0; right: 0; bottom: 0; transition: .4s; margin-top: 80px; " >
+    <div class="row m-3" style="padding: 2rem; background-color: white; border-radius: 20px; box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(102,102,102,0.75);">
+      <div class="col-lg-6 col-sm-12 p-3"  >
+        <img src="image/Cards/Rumah Bolon.png" alt="" srcset="" width="100%" style="border-radius: 20px;">
+        <div class="row mt-3">
+          <div class="col d-flex  align-items-center">
+            <audio controls style="width: 100%; height: 40px;" id="BolonSound">
+              <source src="image/Sound/Bolon.mp3" type="" >
+            </audio>
+
+          </div>
+          <div class="col d-flex align-items-center">
+            <button class="btn btn-danger fs-4" style="border: 20px; width: 100%; height: 40px;" id="ExitBolon" >Exit</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-12 p-3" >
+        <div class="d-flex justify-content-between align-items-center row">
+          <div data-aos="fade-right" data-aos-duration="700">
+            <h3 style="font-weight: bold; color: #9e8c00; font-size: 3rem;" class=" titles" >Bolon House</h3>
+            <p style="color: #505050;" class="fs-4">Bolon House located in North Sumatra</p>
+          </div>
+        </div>
+
+        <div style="width: 100%; height: 300px; overflow-y: scroll;">
+          <p class="fs-4">Ruma Bolon (also called Jabu Bolon) is a traditional house of the Toba Batak people originating from North Sumatra, Indonesia.
+            Ruma Bolon has a rectangular shape. Ruma Bolon has a model like a house on stilts. This house has a height from ground level of around 1.75 meters from ground level. The height of Ruma Bolon means that house residents or guests who want to enter the house have to use stairs. The Ruma Bolon staircase is located in the middle of the body of the house. This results in guests or residents of the house having to bend down to walk to the stairs
+            The inside of Ruma Bolon is a large, open, empty space with no rooms. This rectangular house is supported by supporting pillars. These pillars support every corner of the house, including the floor of Ruma Bolon. Ruma Bolon has a curved roof at the front and back. Ruma Bolon has a roof shaped like a horse saddle.
+            </p>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <!-- Java Script and framework -->
+  <script src="javascript.js"></script>
+  <!-- Boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- feather icon -->
+  <script>feather.replace();</script>
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+  
+</script>
+</body>
+</html>
